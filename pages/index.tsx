@@ -13,7 +13,7 @@ const Home: NextPageWithLayout = () => {
     const [transactions, setTransactions] = useState<Array<IUserTransaction>>([])
     const [userFunds, setUserFunds] = useState<Array<IUserFund>>([])
     const [loading, setLoading] = useState(false)
-    
+
     const { isAuth, loading: loadingAuth } = useAuthContext()
     const router = useRouter()
 
